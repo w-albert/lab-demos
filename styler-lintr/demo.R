@@ -17,7 +17,7 @@ style_text(ugly_code)
 # style selection Addin example:
 # Highlight the code below and use Addins -> Style Selection
 # Notice subtle changes to the formatting of the code
-rubbish = function(x, y, z) {
+rubbish_function <- function(x, y, z) {
   #comment without a space
   a_long_fun_call(argument1, 
                   c(NA,1,1,1),
@@ -31,6 +31,7 @@ rubbish = function(x, y, z) {
       )
     }
 }
+
 
 # Install and load the lintr library
 install.packages("lintr")
