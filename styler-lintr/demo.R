@@ -1,7 +1,7 @@
 # This script contains a demo on using the styler and lintr packages
 
 # Install and load the styler library
-install.packages("styler") 
+# install.packages("styler") 
 library(styler)
 
 # style_text example:
@@ -18,18 +18,19 @@ style_text(ugly_code)
 # Highlight the code below and use Addins -> Style Selection
 # Notice subtle changes to the formatting of the code
 rubbish_function <- function(x, y, z) {
-  #comment without a space
-  a_long_fun_call(argument1, 
-                  c(NA,1,1,1),
-                  ...)
-                    g(a)%>% b
-    new_x <-     y(sqrt(a_logn_fun_call))
-    if (x+ new_x> 3)
-    {
-      1+11++(
-        3/3--3
-      )
-    }
+  # comment without a space
+  a_long_fun_call(
+    argument1,
+    c(NA, 1, 1, 1),
+    ...
+  )
+  g(a) %>% b()
+  new_x <- y(sqrt(a_logn_fun_call))
+  if (x + new_x > 3) {
+    1 + 11 + +(
+      3 / 3 - -3
+    )
+  }
 }
 
 
@@ -46,6 +47,6 @@ library(lintr)
 # Session -> Set Working Directory -> To Source File Location
 
 # Run the linter on this current script
-lintr::lint("./styler-demo.R")
+lintr::lint("./demo.R")
 
 # View linting errors in Markers Tab Panel
